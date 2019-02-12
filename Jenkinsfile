@@ -11,7 +11,7 @@ node {
   }
   stage('Deploy') {
     echo "4. Deploy Stage"
-    pwd
-    touch success
+    echo `pwd`
+    sh "touch success"
   }
 }
