@@ -7,8 +7,11 @@ node {
   }
   stage('Build') {
     echo "3.Build Stage"
+    sleep 120
   }
   stage('Deploy') {
     echo "4. Deploy Stage"
+    pwd
+    touch success
   }
 }
