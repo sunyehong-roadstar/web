@@ -7,11 +7,11 @@ node {
   }
   stage('Build') {
     echo "3.Build Stage"
-    sleep 120
+    sleep 20
   }
   stage('Deploy') {
     echo "4. Deploy Stage"
-    echo `pwd`
+    sh "pwd"
     sh "touch success"
   }
 }
